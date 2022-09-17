@@ -90,6 +90,7 @@ while iniciar_trivia == True: #  Mientras iniciar_trivia sea True, repite:
     #Mostramos una mensaje para decirle al jugador con cuantos puntos inicia
     if intentos > 1:
       print("\nBienvenido de nuevo Saiyajin: " +YELLOW+nombre_saiyajin+RESET)
+      print(GREEN + f"Intento número {intentos}" + RESET)
     print("Inicias con",GREEN ,puntaje , RESET, "puntos.\n")
     print("Espere Cargando Preguntas")
     for numero_carga in range (1,6,+1):
