@@ -1,7 +1,6 @@
 import random  # Importamos la librería random
 import time #Importamos la libreria de tiempo
 #Creamos las variables para los colores
-BLACK = '\033[30m'
 RED = '\033[31m'
 GREEN = '\033[32m'
 YELLOW = '\033[33m'
