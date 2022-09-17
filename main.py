@@ -88,7 +88,7 @@ while iniciar_trivia == True: #  Mientras iniciar_trivia sea True, repite:
     lista_puntajes=[]
     lista_puntajes.append(puntaje)
     #Mostramos una mensaje para decirle al jugador con cuantos puntos inicia
-    if intentos >1:
+    if intentos > 1:
       print("\nBienvenido de nuevo Saiyajin: " +YELLOW+nombre_saiyajin+RESET)
     print("Inicias con",GREEN ,puntaje , RESET, "puntos.\n")
     print("Espere Cargando Preguntas")
@@ -126,7 +126,7 @@ while iniciar_trivia == True: #  Mientras iniciar_trivia sea True, repite:
     print (MAGENTA+"\n10) ¿Cuántas estrellas tenia la esfera que le regaló su abuelo a Gokú?"+RESET)
     
     num_estrellas = input(BLUE+"\nTu respuesta: "+RESET)
-    while num_estrellas.isnumeric()==False:
+    while num_estrellas.isnumeric() == False:
         num_estrellas = input ("Debes ingresar un número. Ingresa nuevamente tu respuesta: ")
  
     if int(num_estrellas) == 4:
@@ -135,7 +135,7 @@ while iniciar_trivia == True: #  Mientras iniciar_trivia sea True, repite:
         print("Puntaje alcanzado: ", GREEN,sum(lista_puntajes),RESET ," puntos")
         nvo_puntaje = sum(lista_puntajes)*2
         print("Puntaje aplicando bonus: ", GREEN,nvo_puntaje,RESET ," puntos")
-    elif int(num_estrellas)>=7:
+    elif int(num_estrellas) >= 7:
         print (RED+"Totalmente incorrecto"+RESET+" Saiyajin", YELLOW+nombre_saiyajin+RESET, "!")
         print ("Tu puntaje sera dividido por ", RED,"/2",RESET, ".")
         print("Puntaje alcanzado: ", GREEN,sum(lista_puntajes),RESET ," puntos")
